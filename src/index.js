@@ -1,7 +1,7 @@
 const express = require("express");
-const { initDb } = require("./config/database");
-const productRoutes = require("./routes/productRoutes");
-const errorHandler = require("./middlewares/errorHandler");
+const { initDb } = require("../src/config/database");
+const productRoutes = require("../src/routes/productRoute");
+const errorHandler = require("../src/middlewares/errorHandler");
 
 const app = express();
 const port = process.env.PORT || 3000;
